@@ -221,3 +221,14 @@ body {
 .trending .content {
     box-shadow: 2px 2px 5px rgb(197, 197, 197);
 }
+
+.cards img {
+    width: 1.2rem;
+    filter: invert(60%);
+}   
+
+.cards .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+}
