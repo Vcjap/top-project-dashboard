@@ -147,7 +147,7 @@ body {
     font-weight: 500;
 }
 
-.main .cards,
+.main .card,
 .main .content {
     background-color: var(--main-accent-text);
     border-radius: 10px;
@@ -190,4 +190,34 @@ body {
 .trending_item {
     display: flex;
     gap: 10px;
+}
+
+/* Projects */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.cards p {
+    margin: 0.5rem;
+}
+
+.cards .title {
+    font-weight: 500;
+}
+
+.cards .body {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.card {
+    border-left: 15px solid rgb(255, 217, 0);
+}
+
+.card, 
+.announcements .content,
+.trending .content {
+    box-shadow: 2px 2px 5px rgb(197, 197, 197);
 }
