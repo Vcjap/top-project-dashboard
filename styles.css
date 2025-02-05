@@ -24,8 +24,7 @@ body {
     font-size: 1.2rem;
 }
 
-.sidebar img,
-.topbar img {
+.sidebar img {
     width: 1.5rem;
     height: auto;
     filter: invert(100%);
@@ -48,7 +47,38 @@ body {
 }
 
 .header {
-    grid-area: 1/2/3/3;
+    grid-area: 1/2/2/3;
+    padding: 20px 30px;
+}
+
+.topbar {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: right;
+    font-weight: 500;
+}
+
+#search_bar {
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#icon_search,
+#icon_notifications
+ {
+    width: 1.5rem;
+}
+
+.topbar .propic {
+    width: 2rem;
+}
+
+.topbar .full_name {
+    justify-self: left;
 }
 
 .main {
